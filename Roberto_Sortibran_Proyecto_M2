@@ -1,0 +1,26 @@
+print("==================")
+print("Encuentra el cuadrante")
+print("==================")
+
+import os
+#Se pide al usuario ingresar los valores de 'x'
+x = int  (input  ('Ingresa el Valor de x:  '  ))
+y = int  (input  ('Ingresa el Valor de y:  '  ))
+#Se usa la variable ' if '
+# utilizan signos ' == ' para declarar igualdad 
+if  x==0 and  y==0:
+    print( ' Origen ' )
+if x==0:
+    print (' Eje Y ' )
+if y==0:
+    print (' Eje X ' )
+if x>0 and y>0:
+    print( ' Cuadrante 1 ' )
+if x<0 and y>0:
+    print( ' Cuadrante 2 ' )
+if x<0 and y<0:
+    print( ' Cuadrante 3 ' )
+if x>0 and y<0:
+    print( ' Cuadrante 4 ' )
+print ()
+os.system (' pause ')
